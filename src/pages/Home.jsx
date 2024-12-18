@@ -1,11 +1,10 @@
 import React from "react";
-import { useAuth } from "../context/AuthContext"; // Импортируем контекст для доступа к текущему пользователю
-import { Navigate } from "react-router-dom"; // Для перенаправления, если пользователь не авторизован
-
+import { useAuth } from "../context/AuthContext"; 
+import { Navigate } from "react-router-dom"; 
 function Home() {
-  const currentUser = useAuth(); // Получаем текущего пользователя из контекста
+  const currentUser = useAuth(); 
 
-  // Если пользователь не авторизован, перенаправляем на страницу логина
+
   if (!currentUser) {
     return <Navigate to="/login" />;
   }
