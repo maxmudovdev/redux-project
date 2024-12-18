@@ -7,7 +7,7 @@ import ProtectedRoutes from "./components/ProtectedRoutes";
 import { Navigate } from "react-router-dom";
 
 function App() {
-  const user = false; // Тестовое значение. Замените на вашу логику.
+  const user = false; 
 
   const routes = createBrowserRouter([
     {
