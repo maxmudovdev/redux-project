@@ -40,11 +40,13 @@ function Register() {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(userCredential.user, { displayName });
+      console.log(userCredential.user); // Foydalanuvchi malumotlarini konsolga chiqarish
       toast.success("Registration successful!");
-      navigate("/"); // Navigate to Home page
+      navigate("/"); // home pagega otish
     } catch (error) {
       toast.error(error.message);
     }
+    
   };
 
   return (

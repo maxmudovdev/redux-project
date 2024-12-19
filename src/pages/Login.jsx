@@ -25,6 +25,7 @@ function Login() {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
+      console.log(auth.currentUser); // Foydalanuvchini konsolga chiqarish
       toast.success("Login successful!");
       navigate("/"); // Navigate to Home page
     } catch (error) {
