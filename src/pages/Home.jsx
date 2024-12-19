@@ -10,16 +10,17 @@ function Home() {
   }
 
   return (
-    <div className="h-screen grid place-items-center w-full">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-5">
-          Salom,  {currentUser.displayName}!
-        </h1>
-        <p className="text-lg">
-          Bizning saytimizdan ro'yxatdan o'tganingiz bilan tabriklaymiz addushi !
-        </p>
-      </div>
-    </div>
+    <div className="h-screen flex items-center justify-center bg-gradient-to-r from-teal-600 via-teal-500 to-blue-400 text-white">
+  <div className="text-center bg-white bg-opacity-20 backdrop-blur-lg p-10 rounded-lg shadow-lg">
+    <h1 className="text-5xl font-bold mb-5">
+      Salom, {currentUser.displayName}!
+    </h1>
+    <p className="text-xl">
+      Bizning saytimizdan ro'yxatdan o'tganingiz bilan tabriklaymiz!
+    </p>
+  </div>
+</div>
+
   );
 }
 
